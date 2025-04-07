@@ -35,7 +35,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="#home" className="text-xl font-bold text-primary">DataAnalyst<span className="text-secondary">Portfolio</span></a>
+        <a href="#home" className="text-xl font-bold text-primary">Tanmay Maity<span className="text-secondary"></span></a>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">

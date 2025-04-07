@@ -27,9 +27,11 @@ const Hero = () => {
               actionable insights that drive strategic business decisions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
+            <a href="#projects">
               <Button size="lg" className="gap-2">
-                View Projects <ArrowRight size={16} />
+                View Projects <ArrowRight size={16}/>
               </Button>
+              </a>
               <Button size="lg" variant="outline">
                 Contact Me
               </Button>

@@ -6,42 +6,37 @@ import { Briefcase, Calendar, GraduationCap } from "lucide-react";
 const About = () => {
   const experiences = [
     {
-      title: "Senior Data Analyst",
-      company: "Data Insights Corp",
-      period: "2020 - Present",
+      title: "Application Development Analyst",
+      company: "Accenture",
+      period: "2021 - 2023",
       description: "Lead data analyst for customer insights team, responsible for analyzing user behavior and market trends to drive strategic business decisions."
     },
     {
       title: "Data Analyst",
-      company: "Analytics Solutions",
-      period: "2017 - 2020",
+      company: "Rabi Industries",
+      period: "2020 - 2021",
       description: "Developed and maintained dashboards and reports to track KPIs and business metrics. Conducted A/B testing for new product features."
     },
-    {
-      title: "Business Intelligence Intern",
-      company: "Tech Innovations Inc",
-      period: "2016 - 2017",
-      description: "Assisted in developing ETL processes and creating data visualizations to support business decision-making."
-    }
+ 
   ];
 
   const education = [
     {
-      degree: "Master of Science in Data Analytics",
-      institution: "University of Data Science",
-      year: "2015 - 2017",
+      degree: "Master of Information Science",
+      institution: "University of Wisconsin-Madison",
+      year: "2023 - 2025",
     },
     {
-      degree: "Bachelor of Business Administration",
-      institution: "State University",
-      year: "2011 - 2015",
+      degree: "Bachelor of Computer Engineering",
+      institution: "University of Mumbai",
+      year: "2016 - 2020",
     }
   ];
 
   const certifications = [
-    "Microsoft Certified: Data Analyst Associate",
-    "Tableau Desktop Specialist",
-    "Google Data Analytics Professional Certificate"
+    "Data Analysis with Python",
+    "Data Visualization with Python",
+    "Databases and SQL for Data Science with Python"
   ];
 
   return (
@@ -50,7 +45,7 @@ const About = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold">About Me</h2>
           <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
-            With over 5 years of experience in data analysis, I help organizations
+            With over 2 years of experience in data analysis, I help organizations
             leverage data to solve complex business problems and drive growth.
           </p>
         </div>

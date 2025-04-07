@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
+import emailjs from "@emailjs/browser"
 
 const Contact = () => {
   const { toast } = useToast();
@@ -24,20 +25,40 @@ const Contact = () => {
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // You would connect this to a real email service
-    toast({
-      title: "Message sent!",
-      description: "Thank you for reaching out. I'll respond to your message soon.",
-      duration: 5000,
-    });
-    
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      message: ""
-    });
+
+    emailjs.send(
+      "service_fveswsv",         // Replace with your EmailJS Service ID
+      "template_7oq5v4p",        // Replace with your EmailJS Template ID
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message
+      },
+      "0vwtMVw8khynEdmDL"          // Replace with your EmailJS Public Key
+    ).then(
+      () => {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for reaching out. I'll respond to your message soon.",
+          duration: 5000,
+        });
+
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          message: ""
+        });
+      },
+      (error) => {
+        toast({
+          title: "Oops! Something went wrong.",
+          description: "Please try again later or email me directly at tanmaymaity06@gmail.com",
+          variant: "destructive"
+        });
+        console.error("EmailJS Error:", error);
+      }
+    );
   };
   
   return (

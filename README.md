@@ -1,1 +1,1 @@
-# aanalyst-achievement-hub
+# analyst-hub
